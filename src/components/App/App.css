@@ -1,3 +1,9 @@
-.App {
-  text-align: center;
+.container {
+  margin         : 20px auto 0;
+  width          : 90vw;
+  height         : 90vh;
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : center;
 }

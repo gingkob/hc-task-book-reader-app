@@ -1,0 +1,23 @@
+.new-book-form {
+  border    : 1px solid #621919;
+  margin    : 30px auto;
+  text-align: center;
+}
+
+.new-book-form__row {
+  padding         : 10px 30px;
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  background-color: #621919;
+  color           : #fff;
+}
+
+.new-book-form__row>input {
+  margin-left: 20px;
+}
+
+.new-book-form__btn {
+  padding: 10px 30px;
+  margin : 10px auto;
+}

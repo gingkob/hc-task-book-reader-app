@@ -1,0 +1,106 @@
+.custom-search {
+  background   : #fff;
+  display      : flex;
+  border       : 1px solid #dfe1e5;
+  box-shadow   : none;
+  border-radius: 24px;
+  z-index      : 3;
+  height       : 44px;
+  margin       : 20px auto;
+  padding      : 5px 16px;
+  width        : 402px;
+  max-width    : 584px;
+  position     : relative;
+}
+
+.expanded {
+  border-bottom-left-radius : 0;
+  border-bottom-right-radius: 0;
+}
+
+.custom-search:hover,
+.custom-search:focus {
+  background-color: #fff;
+  box-shadow      : 0 1px 6px rgba(32, 33, 36, .28);
+  border-color    : rgba(223, 225, 229, 0);
+  outline         : none;
+}
+
+.custom-search>input {
+  width    : auto;
+  flex-grow: 1;
+  border   : none;
+}
+
+.custom-search>input:hover,
+.custom-search>input:focus {
+  outline: none;
+}
+
+.search-icon {
+  display                  : flex;
+  /* align-items           : center; */
+  /* background-color      : firebrick; */
+  width                    : 30px;
+  padding                  : 6px 0;
+}
+
+.search-icon>svg {
+  color: #9aa0a6;
+  fill : currentColor;
+}
+
+.auto-complete-box {
+  position                  : absolute;
+  top                       : 100%;
+  background-color          : #fff;
+  border                    : 1px solid #dfe1e5;
+  padding                   : 8px 14px 14px;
+  width                     : 100.5%;
+  left                      : -1px;
+  border-bottom-left-radius : 24px;
+  border-bottom-right-radius: 24px;
+  z-index                   : 3;
+}
+
+.auto-complete-box:hover,
+.auto-complete-box:focus {
+  box-shadow  : 0 1px 6px rgba(32, 33, 36, .28);
+  border-color: rgba(223, 225, 229, 0);
+  outline     : none;
+  cursor      : pointer;
+}
+
+.spinner,
+.spinner:after {
+  border-radius: 50%;
+  width        : 10em;
+  height       : 10em;
+}
+
+.spinner {
+  border       : 4px solid #f3f3f3;
+  border-top   : 4px solid #9aa0a6;
+  border-radius: 50%;
+  width        : 24px;
+  height       : 24px;
+  animation    : spin 2s linear infinite;
+  position     : absolute;
+  top          : 9px;
+  right        : 9px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.auto-complete-link {
+  text-decoration: none;
+  color          : inherit;
+}

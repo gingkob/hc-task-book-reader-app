@@ -1,0 +1,60 @@
+.book-container {
+  position: relative;
+}
+
+.book-item-container {
+  display        : flex;
+  margin         : 20px auto;
+  justify-content: space-between;
+  gap            : 30px;
+  border-bottom  : 1px solid darkred;
+  padding-bottom : 10px;
+}
+
+.book-item__info {
+  flex: 8;
+}
+
+.book-item__finished {
+  flex       : 1;
+  align-items: center;
+}
+
+.book-item__finished>button {
+  width           : 45px;
+  height          : 45px;
+  border-radius   : 50%;
+  border          : none;
+  background-color: #550505;
+  padding         : 5px;
+  color           : #fff;
+}
+
+.book-item__add-comment {
+  flex       : 1;
+  align-items: center;
+}
+
+.book-item__add-comment button {
+  width           : 85px;
+  height          : 45px;
+  border-radius   : 25px;
+  border          : none;
+  background-color: #0f6308;
+  padding         : 5px;
+  color           : #fff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.book-item__show-comment>button {
+  position        : absolute;
+  padding         : 4px 12px;
+  border          : none;
+  border-radius   : 8px;
+  top             : 45px;
+  background-color: #0f6308;
+  color           : #fff;
+}

@@ -1,0 +1,14 @@
+.new-comment-container {
+  display       : flex;
+  flex-direction: column;
+  gap           : 20px;
+}
+
+.comment-list__container {
+  margin: 0px 10px;
+}
+
+.comment-list__item {
+  border-bottom: 1px solid gray;
+  padding      : 5px;
+}
