@@ -1,4 +1,4 @@
-import CommentComponent from './CommentComponent'
-import CommentsList from './CommentsList'
+import CommentComponent from './CommentComponent';
+import CommentsList from './CommentsList';
 
-export { CommentComponent, CommentsList }
+export { CommentComponent, CommentsList };
