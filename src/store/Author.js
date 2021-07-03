@@ -14,15 +14,14 @@ class Author {
   constructor(authorId, name, bio, birthDate, deathDate, fullName, links) {
     makeAutoObservable(this)
     this._id = uuid()
-    this.authorId = authorId;
-    this.authorName = name;
-    this.bio = bio;
-    this.birthDate = birthDate;
-    this.deathDate = deathDate;
-    this.fullName = fullName;
-    this.links = links;
+    this.authorId = authorId
+    this.authorName = name
+    this.bio = bio
+    this.birthDate = birthDate
+    this.deathDate = deathDate
+    this.fullName = fullName
+    this.links = links
   }
-
 }
 
 export default Author

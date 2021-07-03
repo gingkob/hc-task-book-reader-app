@@ -1,3 +1,3 @@
-import BookPreview from './BookPreview';
+import BookPreview from './BookPreview'
 
-export { BookPreview };
+export { BookPreview }

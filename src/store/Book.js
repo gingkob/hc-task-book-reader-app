@@ -4,13 +4,13 @@ import Comment from './Comment'
 
 class Book {
   _id
-  bookId   // from API
+  bookId // from API
   title
   authorId // from API
   authorName
   coverURLs
   comments = []
-  finished = false;
+  finished = false
   excerpts
   links
   subjectPeople
@@ -18,21 +18,34 @@ class Book {
   subjects
   authors
 
-  constructor(bookId, title, authorId, authorName, description, coverURLs, excerpts, links, subjectPeople, subjectPlaces, subjects, authors) {
+  constructor(
+    bookId,
+    title,
+    authorId,
+    authorName,
+    description,
+    coverURLs,
+    excerpts,
+    links,
+    subjectPeople,
+    subjectPlaces,
+    subjects,
+    authors
+  ) {
     makeAutoObservable(this)
     this._id = uuid()
-    this.bookId = bookId;
-    this.title = title;
-    this.authorId = authorId;
-    this.description = description;
-    this.coverURLs = coverURLs;
-    this.excerpts = excerpts;
-    this.links = links;
-    this.subjectPeople = subjectPeople;
-    this.subjectPlaces = subjectPlaces;
-    this.subjects = subjects;
-    this.authors = authors;
-    this.authorName = authorName;
+    this.bookId = bookId
+    this.title = title
+    this.authorId = authorId
+    this.description = description
+    this.coverURLs = coverURLs
+    this.excerpts = excerpts
+    this.links = links
+    this.subjectPeople = subjectPeople
+    this.subjectPlaces = subjectPlaces
+    this.subjects = subjects
+    this.authors = authors
+    this.authorName = authorName
   }
 
   addComment(text) {
@@ -42,7 +55,6 @@ class Book {
   get showComments() {
     return this.comments
   }
-
 }
 
 export default Book

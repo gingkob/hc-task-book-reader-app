@@ -4,10 +4,10 @@ import { CommentsList } from '../Comment'
 import './Readings.css'
 
 function BookItem({ book, onFinished }) {
-  const [showComments, setShowComments] = useState(false);
+  const [showComments, setShowComments] = useState(false)
 
   const handleClick = () => {
-    setShowComments(prevState => !prevState)
+    setShowComments((prevState) => !prevState)
   }
 
   return (
@@ -26,7 +26,13 @@ function BookItem({ book, onFinished }) {
           </Link>
         </div>
       </div>
-      {!!book.comments.length && <div className="book-item__show-comment" ><button onClick={handleClick}>{showComments ? "Hide Comments" : "Show Comments"}</button> </div>}
+      {!!book.comments.length && (
+        <div className="book-item__show-comment">
+          <button onClick={handleClick}>
+            {showComments ? 'Hide Comments' : 'Show Comments'}
+          </button>{' '}
+        </div>
+      )}
       {showComments && <CommentsList comments={book.comments} />}
     </div>
   )

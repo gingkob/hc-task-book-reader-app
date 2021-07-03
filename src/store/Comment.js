@@ -9,12 +9,11 @@ class Comment {
 
   constructor(bookId, text) {
     makeAutoObservable(this)
-    this.bookId = bookId;
-    this.text = text;
+    this.bookId = bookId
+    this.text = text
     this._id = uuid()
-    this.date = new Date().toLocaleDateString();
+    this.date = new Date().toLocaleDateString()
   }
-
 }
 
 export default Comment
